@@ -6,7 +6,6 @@ path = {}
 a = []
 z = []
 n = 0
-bgt = codecs.open("stat2.txt", "w", "utf-8-sig")
 ng = []
 bg = []
 tg = []
@@ -300,7 +299,7 @@ def viterbi(obs, states, start_p, trans_p, file, number):
 
 
 
-algorithm(filename,int(number),'text_r.txt')
+algorithm(filename,int(number),'res_ngram.txt')
 
 def createMapFile(new_data, filename, map_file):
     ii = 0
