@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+ <head>
+<meta charset="utf-8">
+<title>Диакритики</title>
+<meta content="Этот веб-сервис позволит автоматически расставить дикаритические знаки" name="description">
+<meta name="keywords" content="online diff, diff, diff tool, quick diff, quickdiff, online diff tool, diff checker" />
+<link rel="shortcut icon" href="index.html" type="image/x-icon"> 
+
+<link rel="stylesheet" href="css/box.css"><!-- Обертка html-->
+<link rel="stylesheet" href="css/wrap.css"><!--Обертка Diff-->
+
+ </head>
+ 
+ <body>
+ 
+<script src="js/quick.js"></script><!--Diff-->
+<script type="text/javascript"><!--showHide, показать и скрыть элемент с текстом  -->
+function hideshow() {
+
+  if (document.getElementById('how_to_use').className=='hide')
+      document.getElementById('how_to_use').className='show'
+  else
+        document.getElementById('how_to_use').className='hide';
+}
+
+    function init() {
+        document.getElementById('how_to_use').className='hide';
+}
+</script><!--showHide -->
+
+
+<div id="header1">
+    <div class="logo-quick">
+<a href="index.html"><span>L</span><span>O</span><span>R</span><span>E</span><span>!</span>
+<span id="p-logo-quick">Автоматическая расстановка диакритик</span></a>   
+	</div>
+    <div style="clear: both;"></div>
+</div>
+
+<div id="menu">
+
+</div>
+<hr>
+<div class="diff-quick">
+    <ul>
+        <li><a href='index.html' class="active"><span>Главная</span></a>
+        </li>
+        <li><a href='instruction.html'  ><span>Инструкция</span></a>
+        </li>
+        <li><a href='about.html'><span>Контакты</span></a>
+        </li>
+    </ul>
+</div>
+<hr>
+
+
+	
+<div style="clear:both;" id="wrapper"><!--Diff, вывод-->
+		 <form action="#" id="diffForm">
+	 			<div class="clearfix">
+              <p class="links">
+                 <label for="een">Исходный текст:</label>
+				 
+                    <textarea placeholder="Просто вставьте ваш текст в левом текстовом поле и нажмите &laquo;Обработать&raquo;. Результат обработки будет отображен в соседнем окне" name="een" id="een" cols="30" rows="10"></textarea>
+                  </p>
+				<p class="rechts">
+                  <label for="twee">Результат:</label>
+                    <textarea name="twee" id="twee" cols="30" rows="10"></textarea>
+                 </p>
+			</div>
+<p class="button"><input type="submit" class="awesome white" value="Обработать!" /></p>
+ <span class="help">Введите содержимое в левое поле и нажмите на кнопку &laquo;Обработать!&raquo;</span>
+
+		
+
+
+<!--footer-->
+<div id="footer">
+Смирнов Иван. 3 курс. Высшая Школа Экономики. 2015 год.
+</div>
+<!--end../ footer--> 
+
+
+  </body>
+</html>
